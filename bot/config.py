@@ -12,7 +12,7 @@ class Config:
     AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "942099709").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 2))
     MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 600))
-    TRACK_CHANNEL = int(os.environ.get("TRACK_CHANNEL", False))
+    TRACK_CHANNEL = int(os.environ.get("TRACK_CHANNEL", '-1001769691298'))
     SLOW_SPEED_DELAY = int(os.environ.get("SLOW_SPEED_DELAY", 5))
     HOST = os.environ.get("HOST", "0.0.0.0")
     TIMEOUT = int(os.environ.get("TIMEOUT", 60 * 30))
